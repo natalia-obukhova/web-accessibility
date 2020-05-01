@@ -18,9 +18,9 @@
                 <div class="col-8 media" role="banner" aria-label="A section with a logo and a heading.">
                     <img role="img" alt="An image of a logo. White text Lorem ipsum on the black background." class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg">
                     <div role="group" class="media-body align-self-center">
-                        <div aria-level="1" role="heading"class="mb-0 title">Lorem Ipsum
+                        <h1 aria-level="1" role="heading"class="mb-0 title">Lorem Ipsum
                             <br>Institute of Technology
-                        </div>
+                        </h1>
                     </div>
                 </div>
                 <div role="group" class="col-4">
@@ -124,7 +124,7 @@
 
             <fieldset aria-label="Login with existing account" role="form" class="col-12 col-md-5 mt-4 login">
                 <div role="group" class="p-4 mr-md-3 bg-white">
-                    <legend class="text-primary mb-4 title" aria-label="login form">Login</legend>
+                    <legend class="text-primary mb-4 title" aria-label="login form"><h1 class="text-primary title" aria-level="1">Login</h1></legend>
                     <div class="text-danger mb-4 d-none subtitle" id="login-error" aria-live="assertive">Please correct the error(s)</div>
                     <ul aria-label="List of errors which occured during the validation of the login information" role="list" class="sr-only" id="login-error-list"></ul>
                     <form id="login-form" novalidate>
@@ -152,7 +152,7 @@
 
             <fieldset aria-label="Register a new account" role="form" class="col-12 col-md-7 mt-4 register">
                 <div role="group" class="p-4 bg-white">
-                    <legend aria-label="Creating a new account form" class="text-primary mb-4 title">Create new account</legend>
+                    <legend aria-label="Creating a new account form" class="text-primary mb-4 title"><h1 class="text-primary title" aria-level="1">Create new account</h1></legend>
                     <div class="text-danger mb-4 d-none subtitle" id="register-error">Please correct the error(s)</div>
                     <ul role="list" id="register-error-list" aria-label="List of errors which occured during the validation of the registration information"></ul>
 
@@ -181,7 +181,7 @@
                                 <small class="invalid-feedback"></small>
                             </div>
                             <div class="form-group">
-                                <label for="register-password-control">Password</p>
+                                <label for="register-password-control">Password</label>
                                 <input aria-required="true" role="textbox" class="form-control" id="register-password-control" type="password" placeholder="Password" required>
                                 <small class="invalid-feedback"></small>
                                 <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
@@ -207,7 +207,7 @@
                             </legend>
 
                             <div role="form" class="form-group">
-                                <label for="register-street-control" >Street</label>
+                                <label for="register-street-control">Street</label>
                                 <input aria-required="false" role="textbox" class="form-control" id="register-street-control" type="text" placeholder="Street">
                             </div>
 
