@@ -2,279 +2,281 @@
 <html lang="en" id="root">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lorem Ipsum Institute of Technolgoy</title>
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/common.css" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lorem Ipsum Institute of Technology</title>
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/common.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column bg-light">
-  <header role="group" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
-    <div class="container-fluid d-none d-lg-block my-4 header" role="group" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
-        <div class="container" role = "group" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
-            <div class="row no-gutters" role="group" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
-                <div class="col-8 media" role="banner" aria-label="A section with a logo and a heading.">
-                    <img alt="An image of a logo. White text Lorem ipsum on the black background." role="figure" class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg">
-                    <div role = "heading" class="media-body align-self-center">
-                        <div role = "heading" class="mb-0 title">Lorem Ipsum
-                            <br>Institute of Technology
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4" role="group" aria-label="A section with buttons to increase or decrease the font size">
-                    <div role="group" class="btn-toolbar justify-content-end" aria-label="Buttons to increase or decrease the font size">
-                        <div role = "group" class="btn-group btn-group-sm" aria-label="Buttons to increase or decrease the font size">
-                            <!--<button id="increase">Click me</button>-->
-                            <button role = "button" aria-label="Button to increase the font size" class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
-                            <button role = "button" aria-label="Button to decrease the font size" class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
-                        </div>
-                    </div>
-                </div>
+  <!--start of header section-->
+  <header class="container-fluid d-none d-lg-block my-4 header" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
+      <div class="container" role = "group">
+        <div class="row no-gutters" role="group" >
+          <!--start of the banner section-->
+          <div class="col-8 media" role="banner" aria-label="A section with a logo and a heading.">
+            <img role="img" alt="An image of a logo. White text Lorem ipsum on the black background."  class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg">
+            <div role = "group" class="media-body align-self-center">
+              <div role = "heading" aria-level="1" class="mb-0 title">
+                Lorem Ipsum
+                <br>Institute of Technology
+              </div>
             </div>
+          </div>
+          <!--end of the banner section-->
+          <!--start of the buttons section-->
+          <div role="group" class="col-4">
+            <div role="group" class="btn-toolbar justify-content-end" >
+              <div aria-label="A section with buttons to increase or decrease the font size" role = "group" class="btn-group btn-group-sm" >
+                <button role = "button" aria-label="Button to increase the font size" class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
+                <button role = "button" aria-label="Button to decrease the font size" class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
+              </div>
+            </div>
+          </div>
+          <!--end of the buttons section-->
         </div>
-    </div>
+      </div>
   </header>
+  <!--end of header section-->
   <!-- Omnia's part-->
   <nav>
     <div class="container-fluid bg-dark nav" >
-        <div class="container">
-            <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
-                <div class="navbar-brand d-lg-none">
-                      <a class="nav-link" href="./index.html"><img class="rounded-right" src="./img/logo.jpg" width="40" height="40"></a>
+      <div class="container">
+        <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
+          <div class="navbar-brand d-lg-none">
+            <a class="nav-link" href="./index.html"><img class="rounded-right" src="./img/logo.jpg" width="40" height="40"></a>
+          </div>
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav-bar-content">
+            <div class="navbar-nav mr-auto">
+              <div class="nav-item">
+                <a class="nav-link active" href="./index.html">Homepage</a>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>
+                <div class="dropdown-menu">
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
+                  </div>
                 </div>
-                <button class="navbar-toggler" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="nav-bar-content">
-                    <div class="navbar-nav mr-auto">
-                        <div class="nav-item">
-                            <a class="nav-link active" href="./index.html">Homepage</a>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Master">Master</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar-nav">
-                        <div class="nav-item">
-                            <a class="nav-link" href="./login.html">Login</a>
-                        </div>
-                    </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
+                <div class="dropdown-menu">
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Master">Master</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
+                  </div>
                 </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
+                <div class="dropdown-menu">
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
+                  </div>
+                  <div>
+                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="d-lg-none">
-                <div class="btn-toolbar justify-content-end">
-                    <div class="btn-group btn-group-sm">
-                        <button class="btn btn-dark text-white font-increase-button" id="font-increase-button-1" aria-label="Button for increasing font size">A+</button>
-                        <button class="btn btn-dark text-white font-decrease-button" id="font-decrease-button-1" aria-label="Button for decreasing font size">A-</button>
-                    </div>
-                </div>
+            <div class="navbar-nav">
+              <div class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="d-lg-none">
+          <div class="btn-toolbar justify-content-end">
+            <div class="btn-group btn-group-sm">
+              <button class="btn btn-dark text-white font-increase-button" id="font-increase-button-1" aria-label="Button for increasing font size">A+</button>
+              <button class="btn btn-dark text-white font-decrease-button" id="font-decrease-button-1" aria-label="Button for decreasing font size">A-</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 
   <!--Omnia's part end-->
-  <main role="main" aria-label="The main section with news, studies and researches information.">
-    <div class="container main" id="main" role="group" aria-label="The main section with news, studies and researches information.">
-        <div class="row no-gutters" role="group" aria-label="The main section with news, studies and researches information.">
-            <div class="col-12 col-lg-6" role="group" aria-label="The section with news and events articles.">
-                <div class="p-4 mt-4 mr-lg-3 bg-white news" role="group" aria-label="The section with news and events articles.">
-                    <div role="heading" aria-label="A heading of a section with news and events article" class="text-primary mb-4 title">News &amp; events</div>
-                    <ul>
-                    <li>  <article role="article" aria-label="An article about the global temperature record">
-                        <div class="media mt-4">
-                            <img class="my-1 mr-2 rounded-right" src="./img/iceberg.jpg" role="img" alt="An image of an iceberg">
-                            <div class="media-body">
-                                <div class="text-info mt-0 mb-2 subtitle">
-                                    <a href="./article.html" role="link">Global temperature record</a>
-                                </div>
-                                <p>
-                                    The global surface temperature relative to 1951-1980 average recently published by NASA shows that 2016 ranks as the warmest
-                                    year on record.
-                                </p>
-                                <div class="my-3 text-secondary text-right">
-                                    <div>2018/01/15</div>
-                                </div>
-                            </div>
-                        </div>
-                      </article> </li>
-                    <li>  <article role="article" aria-label="An article about At iam decimum annum in spelunca iacet">
-                        <div class="media mt-4">
-                            <img class="my-1 mr-2 rounded-right" src="./img/universe.jpg" role="img" alt="An image of the universe">
-                            <div class="media-body">
-                                <div class="text-info mt-0 mb-2 subtitle">
-                                    <a href="./empty.html?title=Article" role="link">At iam decimum annum in spelunca iacet</a>
-                                </div>
-                                <p>
-                                    Immo vero, inquit, ad beatissime vivendum parum est, ad beate vero satis. Claudii libidini, qui tum erat summo ne imperio,
-                                    dederetur. Ergo id est convenienter naturae vivere, a natura discedere.
-                                </p>
-                                <div class="my-3 text-secondary text-right">
-                                    <div>2018/01/12</div>
-                                </div>
-                            </div>
-                        </div>
-                      </article> </li>
-                    <li>  <article role="article" aria-label="An article about Quo plebiscito decreta a senatu est consuli quaestio Cn">
-                        <div class="media mt-4">
-                            <img class="my-1 mr-2 rounded-right" src="./img/robots.jpg" role="img" alt="An image of a small robot.">
-                            <div class="media-body">
-                                <div class="text-info mt-0 mb-2 subtitle">
-                                    <a href="./empty.html?title=Article" role="link">Quo plebiscito decreta a senatu est consuli quaestio Cn</a>
-                                </div>
-                                <p>
-                                    Comprehensum, quod cognitum non habet? Quia nec honesto quic quam honestius nec turpi turpius. Maximeque eos videre possumus
-                                    res gestas audire et legere velle, qui a spe gerendi absunt confecti senectute. Est enim
-                                    effectrix multarum et magnarum voluptatum.
-                                </p>
-                                <div class="my-3 text-secondary text-right">
-                                    <div>2017/12/30</div>
-                                </div>
-                            </div>
-                        </div>
-                      </article> </li>
-                    </ul>
+  <main role="main" class="container main" id = "main" aria-label="The main section with news, studies and researches information.">
+    <div class="row no-gutters" role="group">
+      <div class="col-12 col-lg-6" role="group" aria-label="The section with news and events articles.">
+        <div class="p-4 mt-4 mr-lg-3 bg-white news" role="group">
+          <div role="heading" aria-label="A heading of a section with news and events article" class="text-primary mb-4 title">News &amp; events</div>
+          <ul>
+            <li>  <article role="article" aria-label="An article about the global temperature record">
+              <div class="media mt-4">
+                <img class="my-1 mr-2 rounded-right" src="./img/iceberg.jpg" role="img" alt="An image of an iceberg">
+                <div class="media-body">
+                  <div class="text-info mt-0 mb-2 subtitle" role="heading" aria-level="3">
+                    <a href="./article.html" role="link heading" aria-level="3">Global temperature record</a>
+                  </div>
+                  <p>
+                    The global surface temperature relative to 1951-1980 average recently published by NASA shows that 2016 ranks as the warmest
+                    year on record.
+                  </p>
+                  <div class="my-3 text-secondary text-right" role="complementary" aria-label="Publication date">
+                    <div>2018/01/15</div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-6" role="group" aria-label="The subsection with studies and researches.">
-                <div class="p-4 mt-4 bg-white studies" role = "group" aria-label="The section with studies.">
-                    <div class="text-primary mb-4 title" role="heading">Studies</div>
-                    <ul>
-                      <li>
-                    <p class="font-weight-bold" role="heading">Advance your scientific education</p>
-                    <div class="list-unstyled ml-3">
-                      <ul>
-                        <li>
-                        <p>
-                            <a href="./empty.html?title=Bachelor" role="link">Bachelor programmes</a>
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                            <a href="./empty.html?title=Bachelor" role="link">Master programmes</a>
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                            <a href="./empty.html?title=Continuing+education" role="link">Continuing education programmes</a>
-                        </p>
-                      </li>
-                      </ul>
-                    </div>
+              </div>
+            </article> </li>
+            <li>  <article role="article" aria-label="An article about At iam decimum annum in spelunca iacet">
+              <div class="media mt-4">
+                <img class="my-1 mr-2 rounded-right" src="./img/universe.jpg" role="img" alt="An image of the universe">
+                <div class="media-body">
+                  <div class="text-info mt-0 mb-2 subtitle" role="heading" aria-level="3">
+                    <a href="./empty.html?title=Article" role="link header" aria-level="3">At iam decimum annum in spelunca iacet</a>
+                  </div>
+                  <p>
+                    Immo vero, inquit, ad beatissime vivendum parum est, ad beate vero satis. Claudii libidini, qui tum erat summo ne imperio,
+                    dederetur. Ergo id est convenienter naturae vivere, a natura discedere.
+                  </p>
+                  <div class="my-3 text-secondary text-right" role="complementary" aria-label="Publication date">
+                    <div>2018/01/12</div>
+                  </div>
+                </div>
+              </div>
+            </article> </li>
+            <li>  <article role="article" aria-label="An article about Quo plebiscito decreta a senatu est consuli quaestio Cn">
+              <div class="media mt-4">
+                <img class="my-1 mr-2 rounded-right" src="./img/robots.jpg" role="img" alt="An image of a small robot.">
+                <div class="media-body">
+                  <div class="text-info mt-0 mb-2 subtitle"role="heading" aria-level="3">
+                    <a href="./empty.html?title=Article" role="link heading" aria-level="3">Quo plebiscito decreta a senatu est consuli quaestio Cn</a>
+                  </div>
+                  <p>
+                    Comprehensum, quod cognitum non habet? Quia nec honesto quic quam honestius nec turpi turpius. Maximeque eos videre possumus
+                    res gestas audire et legere velle, qui a spe gerendi absunt confecti senectute. Est enim
+                    effectrix multarum et magnarum voluptatum.
+                  </p>
+                  <div class="my-3 text-secondary text-right" role="complementary" aria-label="Publication date">
+                    <div>2017/12/30</div>
+                  </div>
+                </div>
+              </div>
+            </article> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6" role="group" aria-label="The subsection with studies and researches.">
+        <div class="p-4 mt-4 bg-white studies" role = "group" aria-label="The section with studies.">
+          <div class="text-primary mb-4 title" role="heading">Studies</div>
+          <ul>
+            <li>
+              <p class="font-weight-bold" role="heading" aria-level="3">Advance your scientific education</p>
+              <div class="list-unstyled ml-3">
+                <ul>
+                  <li>
+                    <p>
+                      <a href="./empty.html?title=Bachelor" role="link">Bachelor programmes</a>
+                    </p>
                   </li>
+                  <li>
+                    <p>
+                      <a href="./empty.html?title=Bachelor" role="link">Master programmes</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="./empty.html?title=Continuing+education" role="link">Continuing education programmes</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-4 mt-4 bg-white researches" role = "group" aria-label="The section with researches.">
+          <div class="text-primary mb-4 title" role="heading">Researches</div>
+          <ul>
+            <li>
+              <p class="font-weight-bold" role="heading" aria-level="3">Join our renowned research groups</p>
+              <p class="ml-3">
+                <ul>
+                  <li>
+                    <a href="./empty.html?title=Doctorate" role="link">Doctoral programmes</a>
+                  </li>
+                </ul>
+              </p>
+            </li>
+            <li>
+              <p class="font-weight-bold" role="heading" aria-level="3">Latest publications</p>
+              <div class="list-unstyled ml-3" role="group">
+                <ul>
+                  <li><p>
+                    <a href="./empty.html?title=Article" role="link">Tuo vero id quidem, inquam, arbitratu</a>
+                  </p></li>
+                  <li><p>
+                    <a href="./empty.html?title=Article" role="link">Quantum Aristoxeni ingenium consumptum videmus in musicis</a>
+                  </p></li>
+                  <li><p>
+                    <a href="./empty.html?title=Article" role="link">Mihi quidem Antiochum, quem audis, satis belle videris attendere</a>
+                  </p></li>
+                  <li><p>
+                    <a href="./empty.html?title=Article" role="link">Nec enim figura corporis nec ratio excellens ingenii humani significat ad unam hanc rem natum
+                      hominem, ut frueretur voluptatibus</a>
+                    </p></li>
+                    <li><p>
+                      <a href="./empty.html?title=Article" role="link">Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia</a>
+                    </p></li>
                   </ul>
                 </div>
-
-                <div class="p-4 mt-4 bg-white researches" role = "group" aria-label="The section with researches.">
-                    <div class="text-primary mb-4 title" role="heading">Researches</div>
-                    <ul>
-                    <li>
-                    <p class="font-weight-bold" role="heading">Join our renowned research groups</p>
-                    <p class="ml-3">
-                        <ul>
-                          <li>
-                            <a href="./empty.html?title=Doctorate" role="link">Doctoral programmes</a>
-                          </li>
-                        </ul>
-                    </p>
-                    </li>
-                    <li>
-                    <p class="font-weight-bold" role="heading">Latest publications</p>
-                    <div class="list-unstyled ml-3" role="group">
-                      <ul>
-                        <li><p>
-                            <a href="./empty.html?title=Article" role="link">Tuo vero id quidem, inquam, arbitratu</a>
-                        </p></li>
-                        <li><p>
-                            <a href="./empty.html?title=Article" role="link">Quantum Aristoxeni ingenium consumptum videmus in musicis</a>
-                        </p></li>
-                        <li><p>
-                            <a href="./empty.html?title=Article" role="link">Mihi quidem Antiochum, quem audis, satis belle videris attendere</a>
-                        </p></li>
-                        <li><p>
-                            <a href="./empty.html?title=Article" role="link">Nec enim figura corporis nec ratio excellens ingenii humani significat ad unam hanc rem natum
-                                hominem, ut frueretur voluptatibus</a>
-                        </p></li>
-                        <li><p>
-                            <a href="./empty.html?title=Article" role="link">Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia</a>
-                        </p></li>
-                      </ul>
-                    </div>
-                  </li>
-                </div>
+              </li>
             </div>
+          </div>
         </div>
-    </div>
-  </main>
-  <footer>
-    <div class="container-fluid bg-dark mt-4 footer">
-        <div class="container text-center py-3">
-            <div class="row justify-content-around">
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=About">About</a>
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Contact+us">Contact us</a>
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Help">Help</a>
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Terms+of+services">Terms of service</a>
-                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Privacy+policy">Privacy policy</a>
+      </main>
+      <footer role ="contentinfo" aria-label="The footer of the website">
+        <div class="container-fluid bg-dark mt-4 footer" role="group">
+          <div class="container text-center py-3" role="group">
+            <div class="row justify-content-around" role="group">
+              <a role = "link" class="col-12 col-md mr-3 text-white" href="./empty.html?title=About">About</a>
+              <a role = "link" class="col-12 col-md mr-3 text-white" href="./empty.html?title=Contact+us">Contact us</a>
+              <a role = "link" class="col-12 col-md mr-3 text-white" href="./empty.html?title=Help">Help</a>
+              <a role = "link" class="col-12 col-md mr-3 text-white" href="./empty.html?title=Terms+of+services">Terms of service</a>
+              <a role = "link" class="col-12 col-md mr-3 text-white" href="./empty.html?title=Privacy+policy">Privacy policy</a>
             </div>
+          </div>
         </div>
-    </div>
-</footer>
-    <script type="text/javascript" src="./js/jquery.js"></script>
-    <script type="text/javascript" src="./js/popper.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.js"></script>
-    <script type="text/javascript" src="./js/common.js"></script>
-    <script type="text/javascript" src="./js/index.js"></script>
-</body>
+      </footer>
+      <script type="text/javascript" src="./js/jquery.js"></script>
+      <script type="text/javascript" src="./js/popper.js"></script>
+      <script type="text/javascript" src="./js/bootstrap.js"></script>
+      <script type="text/javascript" src="./js/common.js"></script>
+      <script type="text/javascript" src="./js/index.js"></script>
+    </body>
 
-</html>
+    </html>
