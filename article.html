@@ -129,78 +129,82 @@
   </nav>
 
 
-    <main class="container mt-4 main" id="main">
-        <div class="p-5 bg-white">
-            <div class="text-primary text-center mb-4 title">Global temperature record shows 2016 as the warmest year on record</div>
-            <div class="text-center wrapper">
-                <img src="./img/temperature.jpg" class="figure-img img-fluid">
-                <p class="figure-caption text-center px-5">The graphic shows the global mean surface temperature change since 1880 till nowadays. The grey curve indicates
-                    the annual average temperature and the black curve shows the smoothed result. Over the last two centuries,
-                    the mean tempurature has increased by around 1 degree Celcius.</p>
-            </div>
-            <p>The global temperature record shows the fluctuations of the temperature of the atmosphere and the oceans through
-                various spans of time. The recently data published by NASA is one of the most detailed information exists
-                since 1850, when methodical thermometer-based records began.
-            </p>
-            <p>Sixteen of the 17 warmest years in the 136-year record all have occurred since 2001, with the exception of 1998.
-                The year 2016 ranks as the warmest on record.</p>
-            <div class="table-responsive mt-4 wrapper">
-                <table class="table text-center">
-                    <col>
-                    <col>
-                    <colgroup span="2"></colgroup>
-                    <tbody class="thead-dark">
-                        <tr>
-                            <td class="align-middle" rowspan="2">Century</td>
-                            <td class="align-middle" rowspan="2">Year</td>
-                            <td class="align-middle" colspan="2">Temperature</td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">Average</td>
-                            <td class="align-middle">Smoothed</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="align-middle" rowspan="2">19th century</td>
-                            <td>1880</td>
-                            <td>-0.20</td>
-                            <td>-0.13</td>
-                        </tr>
-                        <tr>
-                            <td>1890</td>
-                            <td>-0.37</td>
-                            <td>-0.26</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="align-middle" rowspan="2">20th century</td>
-                            <td>1920</td>
-                            <td>-0.27</td>
-                            <td>-0.26</td>
-                        </tr>
-                        <tr>
-                            <td>1990</td>
-                            <td>0.44</td>
-                            <td>0.34</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="align-middle" rowspan="2">21st century</td>
-                            <td>2000</td>
-                            <td>0.42</td>
-                            <td>0.52</td>
-                        </tr>
-                        <tr>
-                            <td>2016</td>
-                            <td>0.99</td>
-                            <td>0.91</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <main role="main" aria-label="The main content of the article about the global temperature record" class="container mt-4 main" id="main">
+        <div role="group" class="p-5 bg-white">
+            <h2 class="text-primary text-center mb-4 title">Global temperature record shows 2016 as the warmest year on record</h2>
+
+            <figure role="group" aria-label="A section with an image and a caption of the image" class="text-center wrapper">
+                <img src="./img/temperature.jpg" class="figure-img img-fluid"
+                alt="Line chart of global average annual temperature">
+                <figcaption>
+                  <p aria-label="Image description (short)" class="figure-caption text-center px-5">The graphic shows the global mean surface temperature change since 1880 till nowadays. The grey curve indicates
+                      the annual average temperature and the black curve shows the smoothed result. Over the last two centuries,
+                      the mean tempurature has increased by around 1 degree Celcius.</p>
+                  <div aria-label="Image description (long)"<p>The global temperature record shows the fluctuations of the temperature of the atmosphere and the oceans through
+                          various spans of time. The recently data published by NASA is one of the most detailed information exists
+                          since 1850, when methodical thermometer-based records began.
+                      </p>
+
+                      <p>Sixteen of the 17 warmest years in the 136-year record all have occurred since 2001, with the exception of 1998.
+                          The year 2016 ranks as the warmest on record.</p>
+                  </div>
+                  <div role="group" class="table-responsive mt-4 wrapper">
+                          <table class="table text-center" aria-label="Values on the image in a table format">
+                              <colgroup span="2"></colgroup>
+                              <thead class="thead-dark">
+                                  <tr>
+                                      <th class="align-middle" rowspan="2" scope="col">Century</th>
+                                      <th class="align-middle" rowspan="2" scope="col">Year</th>
+                                      <th class="align-middle" colspan="2" scope="colgroup">Temperature</th>
+                                  </tr>
+                                  <tr>
+                                      <th class="align-middle" scope="col">Average</th>
+                                      <th class="align-middle" scope="col">Smoothed</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <th class="align-middle" rowspan="2" scope="rowgroup">19th century</th>
+                                      <th scope="row">1880</th>
+                                      <td>-0.20</td>
+                                      <td>-0.13</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">1890</th>
+                                      <td>-0.37</td>
+                                      <td>-0.26</td>
+                                  </tr>
+                              </tbody>
+                              <tbody>
+                                  <tr>
+                                      <th class="align-middle" rowspan="2" scope="rowgroup">20th century</th>
+                                      <th scope="row">1920</th>
+                                      <td>-0.27</td>
+                                      <td>-0.26</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">1990</th>
+                                      <td>0.44</td>
+                                      <td>0.34</td>
+                                  </tr>
+                              </tbody>
+                              <tbody>
+                                  <tr>
+                                      <th class="align-middle" rowspan="2" scope="rowgroup">21st century</th>
+                                      <th scope="row">2000</th>
+                                      <td>0.42</td>
+                                      <td>0.52</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">2016</th>
+                                      <td>0.99</td>
+                                      <td>0.91</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                </figcaption>
+            </figure>
         </div>
     </main>
 
