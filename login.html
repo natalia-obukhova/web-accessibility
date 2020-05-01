@@ -12,30 +12,30 @@
 </head>
 
 <body class="bg-light">
-    <div class="container-fluid d-none d-lg-block my-4 header">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-8 media">
-                    <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg">
-                    <div class="media-body align-self-center">
-                        <div class="mb-0 title">Lorem Ipsum
+    <header role="banner" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size." class="container-fluid d-none d-lg-block my-4 header">
+        <div class="container" role="group">
+            <div class="row no-gutters" role="group">
+                <div class="col-8 media" role="banner" aria-label="A section with a logo and a heading.">
+                    <img role="img" alt="An image of a logo. White text Lorem ipsum on the black background." class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg">
+                    <div role="group" class="media-body align-self-center">
+                        <div aria-level="1" role="heading"class="mb-0 title">Lorem Ipsum
                             <br>Institute of Technology
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="btn-toolbar justify-content-end">
-                        <div class="btn-group btn-group-sm">
-                            <button class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
-                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
+                <div role="group" class="col-4">
+                    <div role="group" class="btn-toolbar justify-content-end">
+                        <div aria-label="A section with buttons to increase or decrease the font size" role="group" class="btn-group btn-group-sm">
+                            <button role="button" aria-label="Button to increase the font size" class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
+                            <button role = "button" aria-label="Button to decrease the font size" class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="container-fluid bg-dark nav">
+    <nav role="navigation" class="container-fluid bg-dark nav">
         <div class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
                 <div class="navbar-brand d-lg-none">
@@ -117,114 +117,124 @@
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="container main" id="main">
-        <div class="row no-gutters">
-            <div class="col-12 col-md-5 mt-4 login">
-                <div class="p-4 mr-md-3 bg-white">
-                    <div class="text-primary mb-4 title">Login</div>
-                    <div class="text-danger mb-4 d-none subtitle" id="login-error">Please correct the error(s)</div>
-                    <ul class="sr-only" id="login-error-list"></ul>
+    <main role="main" class="container main" id="main" aria-label="The main section of the login.">
+        <div role="group" class="row no-gutters">
+
+            <fieldset aria-label="Login with existing account" role="form" class="col-12 col-md-5 mt-4 login">
+                <div role="group" class="p-4 mr-md-3 bg-white">
+                    <legend class="text-primary mb-4 title" aria-label="login form">Login</legend>
+                    <div class="text-danger mb-4 d-none subtitle" id="login-error" aria-live="assertive">Please correct the error(s)</div>
+                    <ul aria-label="List of errors which occured during the validation of the login information" role="list" class="sr-only" id="login-error-list"></ul>
                     <form id="login-form" novalidate>
-                        <div class="form-group">
-                            <input class="form-control" id="login-email-control" type="email" placeholder="Email" required style="position: relative; top: 10px;">
-                            <p style="position: relative; top: -60px;">Email</p>
+                        <div role="form" class="form-group">
+                            <input role="textbox" name="email" class="form-control" id="login-email-control" type="email" placeholder="Email" required style='position: relative; top: 10px;' aria-required="true">
+                            <p for="email" style="position: relative; top: -60px;">Email (required)</p>
                             <small class="invalid-feedback"></small>
                         </div>
                         <div class="form-group">
-                            <input class="form-control" id="login-password-control" type="password" placeholder="Password" style="position: relative; top: 10px;">
-                            <p style="position: relative; top: -60px;">Password</p>
+                            <input role="textbox" name="password" class="form-control" id="login-password-control" type="password" placeholder="Password" style="position: relative; top: 10px;" required aria-required="true">
+                            <p for="password" style="position: relative; top: -60px;">Password (required)</p>
                             <small class="invalid-feedback"></small>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="remember" id="login-remmeber-control">
-                                <label class="form-check-label">Keep me logged in</label>
+                                <input aria-checked="true" checked="true" role="checkbox" class="form-check-input" type="checkbox" value="remember" id="login-remmeber-control">
+                                <label for="login-remmeber-control" class="form-check-label">Keep me logged in</label>
                             </div>
                         </div>
-                        <button class="btn btn-primary" id="login-login-button" type="submit">Login</button>
-                        <button class="btn btn-link text-danger ml-3" id="login-forgot-button" type="button">Forgot password</button>
+                        <button role="button" name="submit" class="btn btn-primary" id="login-login-button" type="submit">Login</button>
+                        <button role="button" name="forgot password" class="btn btn-link text-danger ml-3" id="login-forgot-button" type="button">Forgot password</button>
                     </form>
                 </div>
-            </div>
+            </fieldset>
 
-            <div class="col-12 col-md-7 mt-4 register">
-                <div class="p-4 bg-white">
-                    <div class="text-primary mb-4 title">Create new account</div>
+            <fieldset aria-label="Register a new account" role="form" class="col-12 col-md-7 mt-4 register">
+                <div role="group" class="p-4 bg-white">
+                    <legend aria-label="Creating a new account form" class="text-primary mb-4 title">Create new account</legend>
                     <div class="text-danger mb-4 d-none subtitle" id="register-error">Please correct the error(s)</div>
-                    <ul class="sr-only" id="register-error-list"></ul>
-                    <form id="register-form" novalidate>
-                        <div class="form-group">
-                            <p class="form-label" id="register-basic-legend">Basic information
-                                <small class="text-secondary">(optional)</small>
-                            </p>
+                    <ul role="list" id="register-error-list" aria-label="List of errors which occured during the validation of the registration information"></ul>
+
+                    <form aria-label="Registration form" role="form" id="register-form" novalidate>
+                        <fieldset class="form-group">
+                            <legend class="form-label" id="register-basic-legend">Basic information
+                                <small class="text-secondary">(required)</small>
+                            </legend>
+
                             <div class="form-row">
                                 <div class="form-group col-12 col-lg-6">
-                                    <p>First name</p>
-                                    <input class="form-control" type="text" id="register-first-name-control" placeholder="First name" required>
+                                    <label for="register-first-name-control">First name</label>
+                                    <input aria-required="true" role="textbox" class="form-control" type="text" id="register-first-name-control" placeholder="First name" required>
                                     <small class="invalid-feedback"></small>
                                 </div>
                                 <div class="form-group col-12 col-lg-6">
-                                    <p>Last name</p>
-                                    <input class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required>
+                                    <label for="register-last-name-control">Last name</label>
+                                    <input aria-required="true" role="textbox" class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required>
                                     <small class="invalid-feedback"></small>
                                 </div>
                             </div>
+
                             <div class="form-group">
-                                <p>Email</p>
-                                <input class="form-control" id="register-email-control" type="email" placeholder="Email" required>
+                                <label for="register-email-control">Email</label>
+                                <input aria-required="true" role="textbox" class="form-control" id="register-email-control" type="email" placeholder="Email" required>
                                 <small class="invalid-feedback"></small>
                             </div>
                             <div class="form-group">
-                                <p>Password</p>
-                                <input class="form-control" id="register-password-control" type="password" placeholder="Password" required>
+                                <label for="register-password-control">Password</p>
+                                <input aria-required="true" role="textbox" class="form-control" id="register-password-control" type="password" placeholder="Password" required>
                                 <small class="invalid-feedback"></small>
                                 <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
                             </div>
+
                             <div class="form-group">
                                 <p>Programme</p>
-                                <select class="form-control" id="register-programme-control" required>
-                                    <option value="">Please select your education or research programme</option>
-                                    <option value="bachelor">Bachelor</option>
-                                    <option value="master">Master</option>
-                                    <option value="continuing">Continuing education</option>
-                                    <option value="doctorate">Doctorate</option>
+                                <select role="listbox" class="form-control" id="register-programme-control" required aria-required="true">
+                                    <option role="listitem" value="">Please select your education or research programme</option>
+                                    <option role="listitem" value="bachelor">Bachelor</option>
+                                    <option role="listitem" value="master">Master</option>
+                                    <option role="listitem" value="continuing">Continuing education</option>
+                                    <option role="listitem" value="doctorate">Doctorate</option>
                                 </select>
                                 <small class="invalid-feedback"></small>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <p class="form-label" id="register-address-legend">Additional information
-                                <small class="text-secondary">(optional)</small>
-                            </p>
-                            <div class="form-group">
-                                <p>Street</p>
-                                <input class="form-control" id="register-street-control" type="text" placeholder="Street">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-lg-5">
-                                    <p>City</p>
-                                    <input class="form-control" id="register-city-control" type="text" placeholder="City">
-                                </div>
-                                <div class="form-group col-12 col-lg-4">
-                                    <p>State</p>
-                                    <input class="form-control" id="register-state-control" type="text" placeholder="State">
-                                </div>
-                                <div class="form-group col-12 col-lg-3">
-                                    <p>Zip</p>
-                                    <input class="form-control" id="register-zip-control" type="text" placeholder="Zip">
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary" id="register-register-button">Register</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="container-fluid bg-dark mt-4 footer">
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <legend class="form-label" id="register-address-legend">Additional information
+                                <small class="text-secondary">(optional)</small>
+                            </legend>
+
+                            <div role="form" class="form-group">
+                                <label>Street</label>
+                                <input aria-required="false" role="textbox" class="form-control" id="register-street-control" type="text" placeholder="Street">
+                            </div>
+
+                            <div role="form" class="form-row">
+                                <div class="form-group col-12 col-lg-5">
+                                    <label>City</label>
+                                    <input aria-required="false" role="textbox" class="form-control" id="register-city-control" type="text" placeholder="City">
+                                </div>
+
+                                <div role="form" class="form-group col-12 col-lg-4">
+                                    <label>State</label>
+                                    <input aria-required="false" role="textbox" class="form-control" id="register-state-control" type="text" placeholder="State">
+                                </div>
+                                <div role="form" class="form-group col-12 col-lg-3">
+                                    <label>Zip</label>
+                                    <input aria-required="false" role="textbox" class="form-control" id="register-zip-control" type="text" placeholder="Zip">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <button class="btn btn-primary" id="register-register-button">Register</button>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-dark mt-4 footer">
         <div class="container text-center py-3">
             <div class="row justify-content-around">
                 <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=About">About</a>
@@ -234,7 +244,7 @@
                 <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Privacy+policy">Privacy policy</a>
             </div>
         </div>
-    </div>
+    </footer>
 
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/popper.js"></script>
