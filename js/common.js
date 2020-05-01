@@ -48,20 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.navbar-toggler')
         .addEventListener('click', toggleNavigation, false);
 }, false);
-/*
+
 let increase = document.getElementById("font-increase-button");
 increase.onclick = function() {
-  console.log(document.getElementsByTagName("html")[0]);
-  let element = document.getElementsByTagName("html")[0];
-  let currentSize = element.getAttribute("style");
-  if (currentSize == null) {
-    element.setAttribute("style", "font-size: 1.2rem");
-    element.setAttribute("style", "color: black;")
-  }
-  else {
-    console.log(element.getAttribute("style"));
-    let size = element.getAttribute("style");
-
-  }
+  let txt = document.getElementsByTagName("html")[0];
+  style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+  currentSize = parseFloat(style);
+  txt.style.fontSize = (currentSize + 5) + 'px';
 }
-*/
+let decrease = document.getElementById("font-decrease-button");
+decrease.onclick = function() {
+  let txt = document.getElementsByTagName("html")[0];
+  style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+  currentSize = parseFloat(style);
+  txt.style.fontSize = (currentSize - 5) + 'px';
+}
