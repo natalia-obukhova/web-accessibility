@@ -12,31 +12,34 @@
 </head>
 
 <body class="d-flex flex-column bg-light">
-    <div class="container-fluid d-none d-lg-block my-4 header">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-8 media">
-                    <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg">
-                    <div class="media-body align-self-center">
-                        <div class="mb-0 title">Lorem Ipsum
+  <header role="group" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
+    <div class="container-fluid d-none d-lg-block my-4 header" role="group" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
+        <div class="container" role = "group" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
+            <div class="row no-gutters" role="group" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
+                <div class="col-8 media" role="banner" aria-label="A section with a logo and a heading.">
+                    <img alt="An image of a logo. White text Lorem ipsum on the black background." role="figure" class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg">
+                    <div role = "heading" class="media-body align-self-center">
+                        <div role = "heading" class="mb-0 title">Lorem Ipsum
                             <br>Institute of Technology
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="btn-toolbar justify-content-end">
-                        <div class="btn-group btn-group-sm">
+                <div class="col-4" role="group" aria-label="A section with buttons to increase or decrease the font size">
+                    <div role="group" class="btn-toolbar justify-content-end" aria-label="Buttons to increase or decrease the font size">
+                        <div role = "group" class="btn-group btn-group-sm" aria-label="Buttons to increase or decrease the font size">
                             <!--<button id="increase">Click me</button>-->
-                            <button class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
-                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
+                            <button role = "button" aria-label="Button to increase the font size" class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
+                            <button role = "button" aria-label="Button to decrease the font size" class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container-fluid bg-dark nav">
+  </header>
+  <!-- Omnia's part-->
+  <nav>
+    <div class="container-fluid bg-dark nav" >
         <div class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
                 <div class="navbar-brand d-lg-none">
@@ -112,21 +115,24 @@
             <div class="d-lg-none">
                 <div class="btn-toolbar justify-content-end">
                     <div class="btn-group btn-group-sm">
-                        <button class="btn btn-dark text-white font-increase-button" id="font-increase-button-1">A+</button>
-                        <button class="btn btn-dark text-white font-decrease-button" id="font-decrease-button-1">A-</button>
+                        <button class="btn btn-dark text-white font-increase-button" id="font-increase-button-1" aria-label="Button for increasing font size">A+</button>
+                        <button class="btn btn-dark text-white font-decrease-button" id="font-decrease-button-1" aria-label="Button for decreasing font size">A-</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+  </nav>
 
-    <div class="container main" id="main">
-        <div class="row no-gutters">
-            <div class="col-12 col-lg-6">
-                <div class="p-4 mt-4 mr-lg-3 bg-white news">
+  <!--Omnia's part end-->
+  <main role="main">
+    <div class="container main" id="main" role="group">
+        <div class="row no-gutters" role="group">
+            <div class="col-12 col-lg-6" role="group">
+                <div class="p-4 mt-4 mr-lg-3 bg-white news" role="group">
                     <div class="text-primary mb-4 title">News &amp; events</div>
                     <div class="media mt-4">
-                        <img class="my-1 mr-2 rounded-right" src="./img/iceberg.jpg">
+                        <img class="my-1 mr-2 rounded-right" src="./img/iceberg.jpg" role="figure" alt="An image of an iceberg">
                         <div class="media-body">
                             <div class="text-info mt-0 mb-2 subtitle">
                                 <a href="./article.html">Global temperature record</a>
@@ -219,7 +225,8 @@
             </div>
         </div>
     </div>
-
+  </main>
+  <footer>
     <div class="container-fluid bg-dark mt-4 footer">
         <div class="container text-center py-3">
             <div class="row justify-content-around">
@@ -231,7 +238,7 @@
             </div>
         </div>
     </div>
-
+</footer>
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/popper.js"></script>
     <script type="text/javascript" src="./js/bootstrap.js"></script>
