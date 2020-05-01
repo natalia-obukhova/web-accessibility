@@ -129,19 +129,22 @@
                     <ul aria-label="List of errors which occured during the validation of the login information" role="list" class="sr-only" id="login-error-list"></ul>
                     <form id="login-form" novalidate>
                         <div role="form" class="form-group">
+                            <label for="login-email-control" style="position: relative; top: -60px;">Email (required)</label>
                             <input role="textbox" name="email" class="form-control" id="login-email-control" type="email" placeholder="Email" required style='position: relative; top: 10px;' aria-required="true">
-                            <p for="email" style="position: relative; top: -60px;">Email (required)</p>
+
                             <small class="invalid-feedback"></small>
                         </div>
                         <div class="form-group">
+                            <label for="login-password-control" style="position: relative; top: -60px;">Password (required)</label>
                             <input role="textbox" name="password" class="form-control" id="login-password-control" type="password" placeholder="Password" style="position: relative; top: 10px;" required aria-required="true">
-                            <p for="password" style="position: relative; top: -60px;">Password (required)</p>
+
                             <small class="invalid-feedback"></small>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
+                              <label for="login-remmeber-control" class="form-check-label">Keep me logged in</label>
                                 <input aria-checked="true" checked="true" role="checkbox" class="form-check-input" type="checkbox" value="remember" id="login-remmeber-control">
-                                <label for="login-remmeber-control" class="form-check-label">Keep me logged in</label>
+
                             </div>
                         </div>
                         <button role="button" name="submit" class="btn btn-primary" id="login-login-button" type="submit">Login</button>
