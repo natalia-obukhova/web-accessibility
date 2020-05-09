@@ -125,20 +125,20 @@
             <fieldset aria-label="Login with existing account" class="col-12 col-md-5 mt-4 login">
                 <div role="group" class="p-4 mr-md-3 bg-white">
                     <h1 class="text-primary title" aria-level="1"><legend class="text-primary mb-4 title" aria-label="login form">Login</legend></h1>
-                    <div class="text-danger mb-4 d-none subtitle" id="login-error" aria-live="assertive">Please correct the error(s)</div>
-                    <ul aria-label="List of errors which occured during the validation of the login information" role="list" class="sr-only" id="login-error-list"></ul>
+                    <h2 class="text-danger mb-4 d-none subtitle" id="login-error" aria-live="assertive">Please correct the error(s)</h2>
+                    <ul class="sr-only" aria-label="List of errors which occured during the validation of the login information" role="list" id="login-error-list"></ul>
                     <form id="login-form" novalidate>
                         <div role="form" class="form-group">
                             <label for="login-email-control">Email (required)</label>
                             <input role="textbox" name="email" class="form-control" id="login-email-control" type="email" placeholder="Email" required aria-required="true">
 
-                            <small class="invalid-feedback"></small>
+                            <small class="invalid-feedback" id="login-email-feedback"></small>
                         </div>
                         <div class="form-group">
                             <label for="login-password-control">Password (required)</label>
                             <input name="password" class="form-control" id="login-password-control" type="password" placeholder="Password" required aria-required="true">
 
-                            <small class="invalid-feedback"></small>
+                            <small class="invalid-feedback" id="login-password-feedback"></small>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
@@ -155,8 +155,8 @@
             <fieldset aria-label="Register a new account" class="col-12 col-md-7 mt-4 register">
                 <div role="group" class="p-4 bg-white">
                     <h1 class="text-primary title" aria-level="1"><legend aria-label="Creating a new account form" class="text-primary mb-4 title">Create new account</legend></h1>
-                    <div class="text-danger mb-4 d-none subtitle" id="register-error">Please correct the error(s)</div>
-                    <ul role="list" id="register-error-list" aria-label="List of errors which occured during the validation of the registration information"></ul>
+                    <h2 class="text-danger mb-4 d-none subtitle" id="register-error" aria-live="assertive">Please correct the error(s)</h2>
+                    <ul role="list" id="register-error-list" class="sr-only" aria-label="List of errors which occured during the validation of the registration information"></ul>
 
                     <form aria-label="Registration form" role="form" id="register-form" novalidate>
                         <fieldset class="form-group">
@@ -168,24 +168,24 @@
                                 <div class="form-group col-12 col-lg-6">
                                     <label for="register-first-name-control">First name</label>
                                     <input aria-required="true" role="textbox" class="form-control" type="text" id="register-first-name-control" placeholder="First name" required>
-                                    <small class="invalid-feedback"></small>
+                                    <small id = "register-first-feedback" class="invalid-feedback"></small>
                                 </div>
                                 <div class="form-group col-12 col-lg-6">
                                     <label for="register-last-name-control">Last name</label>
                                     <input aria-required="true" role="textbox" class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required>
-                                    <small class="invalid-feedback"></small>
+                                    <small  id = "register-last-feedback" class="invalid-feedback"></small>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="register-email-control">Email</label>
                                 <input aria-required="true" role="textbox" class="form-control" id="register-email-control" type="email" placeholder="Email" required>
-                                <small class="invalid-feedback"></small>
+                                <small  id = "register-email-feedback" class="invalid-feedback"></small>
                             </div>
                             <div class="form-group">
                                 <label for="register-password-control">Password</label>
                                 <input aria-required="true" class="form-control" id="register-password-control" type="password" placeholder="Password" required>
-                                <small class="invalid-feedback"></small>
+                                <small  id = "register-password-feedback" class="invalid-feedback"></small>
                                 <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
                             </div>
 
@@ -198,7 +198,7 @@
                                     <option role="listitem" value="continuing">Continuing education</option>
                                     <option role="listitem" value="doctorate">Doctorate</option>
                                 </select>
-                                <small class="invalid-feedback"></small>
+                                <small  id = "register-programme-feedback" class="invalid-feedback"></small>
                             </div>
 
                         </fieldset>
