@@ -62,3 +62,33 @@ function decrease(elem) {
   currentSize = parseFloat(style);
   txt.style.fontSize = (currentSize - 5) + 'px';
 }
+
+/*
+function expand_collapse(el) {
+  event.preventDefault();
+  var expanded = el.getAttribute('aria-expanded');
+  var new_val;
+  if (expanded == 'true') {
+    new_val = "false";
+  }
+  else {
+    new_val = "true";
+  }
+  el.setAttribute('aria-expanded', new_val);
+}
+*/
+
+document.querySelector('#nav-bar-faculties') // Select the menu element
+    .addEventListener('click', function(event) { // Add event listener
+    console.log('HERE')
+    var expanded = this.getAttribute("aria-expanded");
+    var new_val;
+    if (expanded == 'true') {
+      new_val = "false";
+    }
+    else {
+      new_val = "true";
+    }
+    this.setAttribute('aria-expanded', new_val);
+    event.preventDefault(); // Prevent default event handling
+}, false)
