@@ -26,8 +26,8 @@
                 <div role="group" class="col-4">
                     <div role="group" class="btn-toolbar justify-content-end">
                         <div aria-label="A section with buttons to increase or decrease the font size" role="group" class="btn-group btn-group-sm">
-                            <button role="button" aria-label="Button to increase the font size" class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
-                            <button role = "button" aria-label="Button to decrease the font size" class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
+                            <button onclick="increase(this)" role="button" aria-label="Button to increase the font size" class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
+                            <button onclick="decrease(this)" role = "button" aria-label="Button to decrease the font size" class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
                         </div>
                     </div>
                 </div>
@@ -111,8 +111,8 @@
             <div class="d-lg-none">
                 <div class="btn-toolbar justify-content-end">
                     <div class="btn-group btn-group-sm">
-                        <button class="btn btn-dark text-white font-increase-button" id="font-increase-button-1">A+</button>
-                        <button class="btn btn-dark text-white font-decrease-button" id="font-decrease-button-1">A-</button>
+                        <button class="btn btn-dark text-white font-increase-button" onclick="increase(this)" id="font-increase-button-1">A+</button>
+                        <button class="btn btn-dark text-white font-decrease-button" onclick="decrease(this)" id="font-decrease-button-1">A-</button>
                     </div>
                 </div>
             </div>

@@ -49,15 +49,14 @@ document.addEventListener('DOMContentLoaded', function() {
         .addEventListener('click', toggleNavigation, false);
 }, false);
 
-let increase = document.getElementById("font-increase-button");
-increase.onclick = function() {
+function increase(elem) {
   let txt = document.getElementsByTagName("html")[0];
   style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
   currentSize = parseFloat(style);
   txt.style.fontSize = (currentSize + 5) + 'px';
 }
-let decrease = document.getElementById("font-decrease-button");
-decrease.onclick = function() {
+
+function decrease(elem) {
   let txt = document.getElementsByTagName("html")[0];
   style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
   currentSize = parseFloat(style);
