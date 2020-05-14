@@ -80,7 +80,7 @@ function expand_collapse(el) {
 
 document.querySelector('#nav-bar-faculties') // Select the menu element
     .addEventListener('click', function(event) { // Add event listener
-    console.log('HERE')
+    console.log('HERE');
     var expanded = this.getAttribute("aria-expanded");
     var new_val;
     if (expanded == 'true') {
@@ -91,4 +91,34 @@ document.querySelector('#nav-bar-faculties') // Select the menu element
     }
     this.setAttribute('aria-expanded', new_val);
     event.preventDefault(); // Prevent default event handling
-}, false)
+}, false);
+
+document.querySelector('#nav-bar-education') // Select the menu element
+    .addEventListener('click', function(event) { // Add event listener
+    console.log('HERE');
+    var expanded = this.getAttribute("aria-expanded");
+    var new_val;
+    if (expanded == 'true') {
+      new_val = "false";
+    }
+    else {
+      new_val = "true";
+    }
+    this.setAttribute('aria-expanded', new_val);
+    event.preventDefault(); // Prevent default event handling
+}, false);
+
+document.querySelector('#nav-bar-industry') // Select the menu element
+    .addEventListener('click', function(event) { // Add event listener
+    console.log('HERE');
+    var expanded = this.getAttribute("aria-expanded");
+    var new_val;
+    if (expanded == 'true') {
+      new_val = "false";
+    }
+    else {
+      new_val = "true";
+    }
+    this.setAttribute('aria-expanded', new_val);
+    event.preventDefault(); // Prevent default event handling
+}, false);
