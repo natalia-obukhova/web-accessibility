@@ -59,62 +59,73 @@
           </button>
 
           <div role="group" class="collapse navbar-collapse" id="nav-bar-content">
-            <ul role="menu" class="navbar-nav mr-auto">
+            <ul role="menubar" class="navbar-nav mr-auto">
 
               <li role="menuitem" class="nav-item">
                 <a role="link" class="nav-link" href="./index.html">Homepage</a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a aria-haspopup="true" aria-expanded="false" role="button" class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>
-                <ul tabindex="-1" aria-activedescendant="nav-bar-faculties" role="listbox" class="dropdown-menu" aria-labelledby="nav-bar-faculties">
-                  <li role="menuitem">
-                    <a role="link" class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
+              <li role = "none" class="nav-item dropdown">
+                <a tabindex="0"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   role="menuitem"
+                   class="nav-link dropdown-toggle"
+                   href="#"
+                   id="nav-bar-faculties">
+                Faculties</a>
+                <ul
+                  aria-activedescendant="nav-bar-faculties"
+                  role="menu"
+                  class="dropdown-menu"
+                  aria-labelledby="nav-bar-faculties">
+                  <li role="none">
+                    <a tabindex="-1" role="menuitem" class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
                   </li>
-                  <li role="menuitem">
-                    <a role="link" class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
+                  <li role="none">
+                    <a tabindex="-1" role="menuitem" class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
                   </li>
-                  <li role="menuitem">
-                    <a role="link" class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
+                  <li role="none">
+                    <a tabindex="-1" role="menuitem" class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
                   </li>
-                  <li role="menuitem">
-                    <a role="link" class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
+                  <li role="none">
+                    <a tabindex="-1" role="menuitem" class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
                   </li>
-                  <li role="menuitem">
-                    <a role="link" class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a aria-haspopup="true" aria-expanded="false" role="button" class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
-                <ul tabindex="-1" aria-activedescendant="nav-bar-education" role="listbox" class="dropdown-menu" aria-labelledby="nav-bar-education">
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Master">Master</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
+                  <li role="none">
+                    <a tabindex="-1" role="menuitem" class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
                   </li>
                 </ul>
               </li>
 
               <li class="nav-item dropdown">
-                <a aria-haspopup="true" aria-expanded="false" role="button" class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
-                <ul tabindex="-1" aria-activedescendant="nav-bar-industry" role="listbox" class="dropdown-menu" aria-labelledby="nav-bar-industry">
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
+                <a tabindex="0" aria-haspopup="true" aria-expanded="false" role="menuitem" class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
+                <ul tabindex="-1" aria-activedescendant="nav-bar-education" role="menu" class="dropdown-menu" aria-labelledby="nav-bar-education">
+                  <li role="none">
+                    <a role="menuitem" class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
+                  <li role="none">
+                    <a role="menuitem" class="dropdown-item" href="./empty.html?title=Master">Master</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
+                  <li role="none">
+                    <a role="menuitem" class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a tabindex="0" aria-haspopup="true" aria-expanded="false" role="menuitem" class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
+                <ul tabindex="-1" aria-activedescendant="nav-bar-industry" role="menu" class="dropdown-menu" aria-labelledby="nav-bar-industry">
+                  <li role="none">
+                    <a role="menuitem" class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
                   </li>
                 </ul>
           </div>

@@ -78,6 +78,9 @@ function expand_collapse(el) {
 }
 */
 
+
+
+
 document.querySelector('#nav-bar-faculties') // Select the menu element
     .addEventListener('click', function(event) { // Add event listener
     console.log('HERE');
@@ -92,6 +95,7 @@ document.querySelector('#nav-bar-faculties') // Select the menu element
     this.setAttribute('aria-expanded', new_val);
     event.preventDefault(); // Prevent default event handling
 }, false);
+
 
 document.querySelector('#nav-bar-education') // Select the menu element
     .addEventListener('click', function(event) { // Add event listener
