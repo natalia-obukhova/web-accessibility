@@ -63,27 +63,10 @@ function decrease(elem) {
   txt.style.fontSize = (currentSize - 5) + 'px';
 }
 
-/*
-function expand_collapse(el) {
-  event.preventDefault();
-  var expanded = el.getAttribute('aria-expanded');
-  var new_val;
-  if (expanded == 'true') {
-    new_val = "false";
-  }
-  else {
-    new_val = "true";
-  }
-  el.setAttribute('aria-expanded', new_val);
-}
-*/
-
-
-
 
 document.querySelector('#nav-bar-faculties') // Select the menu element
     .addEventListener('click', function(event) { // Add event listener
-    console.log('HERE');
+
     var expanded = this.getAttribute("aria-expanded");
     var new_val;
     if (expanded == 'true') {
@@ -93,13 +76,25 @@ document.querySelector('#nav-bar-faculties') // Select the menu element
       new_val = "true";
     }
     this.setAttribute('aria-expanded', new_val);
+    console.log(this);
+    console.log(this.parentNode.childNodes[3].childNodes[1].childNodes[1]);
+    this.parentNode.childNodes[3].childNodes[1].childNodes[1].focus();
+    this.addClass("dropup");
     event.preventDefault(); // Prevent default event handling
 }, false);
 
+document.querySelector('#nav-bar-faculties') // Select the menu element
+    .addEventListener('blur', function(event) { // Add event listener
+    this.setAttribute('aria-expanded', "false");
+    console.log(this);
+    console.log(this.parentNode.childNodes[3].childNodes[1].childNodes[1]);
+    this.parentNode.childNodes[3].childNodes[1].childNodes[1].focus();
+    event.preventDefault(); // Prevent default event handling
+}, false);
 
 document.querySelector('#nav-bar-education') // Select the menu element
-    .addEventListener('click', function(event) { // Add event listener
-    console.log('HERE');
+    .addEventListener('click, space, hover', function(event) { // Add event listener
+
     var expanded = this.getAttribute("aria-expanded");
     var new_val;
     if (expanded == 'true') {
@@ -113,8 +108,8 @@ document.querySelector('#nav-bar-education') // Select the menu element
 }, false);
 
 document.querySelector('#nav-bar-industry') // Select the menu element
-    .addEventListener('click', function(event) { // Add event listener
-    console.log('HERE');
+    .addEventListener('click, space, hover', function(event) { // Add event listener
+
     var expanded = this.getAttribute("aria-expanded");
     var new_val;
     if (expanded == 'true') {
@@ -126,3 +121,38 @@ document.querySelector('#nav-bar-industry') // Select the menu element
     this.setAttribute('aria-expanded', new_val);
     event.preventDefault(); // Prevent default event handling
 }, false);
+
+$("#nav-bar-faculties").keypress(function (e) {
+  if (e.key === ' ' || e.key === 'Spacebar') {
+    // ' ' is standard, 'Spacebar' was used by IE9 and Firefox < 37
+    e.preventDefault();
+    var expanded = this.getAttribute("aria-expanded");
+    var new_val;
+    if (expanded == 'true') {
+      new_val = "false";
+    }
+    else {
+      new_val = "true";
+    }
+    this.setAttribute('aria-expanded', new_val);
+    console.log(this);
+    this.parentNode.childNodes[3].childNodes[1].childNodes[1].focus();
+    this.parentNode.childNodes[3].childNodes[1].childNodes[1].addClass("active");
+    event.stopPropagation();
+    event.preventDefault();
+
+    var currentDropDownButton = event.target;
+    var currentDropDownMenu =
+        currentDropDownButton.parentNode.querySelector('.dropdown-menu');
+    var isOpen = currentDropDownMenu.classList.contains('show');
+    var dropDownMenus =
+        document.querySelectorAll('#nav-bar-content .dropdown .dropdown-menu');
+    for (var j = 0; j < dropDownMenus.length; j++) {
+        dropDownMenus[j].classList.remove('show');
+    }
+
+    if (!isOpen) {
+        currentDropDownMenu.classList.add('show');
+    }
+  }
+});

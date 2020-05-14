@@ -12,9 +12,9 @@
 </head>
 
 <body class="d-flex flex-column bg-light">
-  <div aria-label="skip links" style="visibility: hidden">
-    <a href="#main">Skip to main content</a>
-    <a href="#footer">Skip to footer</a>
+  <div tabindex="0" aria-label="skip links" style="visibility: hidden">
+    <a tabindex="1" href="#main">Skip to main content</a>
+    <a tabindex="3" href="#footer">Skip to footer</a>
   </div>
   <!--start of header section-->
   <header class="container-fluid d-none d-lg-block my-4 header" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
@@ -98,10 +98,10 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a tabindex="0" aria-haspopup="true" aria-expanded="false" role="menuitem" class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
+                <a tabindex="0" aria-haspopup="true" aria-expanded="false" role="menuitem" class="nav-link dropdown-toggle active" href="#" id="nav-bar-education">Education &amp; research</a>
                 <ul tabindex="-1" aria-activedescendant="nav-bar-education" role="menu" class="dropdown-menu" aria-labelledby="nav-bar-education">
                   <li role="none">
-                    <a role="menuitem" class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
+                    <a role="menuitem" class="dropdown-item active" href="./empty.html?title=Bachelor">Bachelor</a>
                   </li>
                   <li role="none">
                     <a role="menuitem" class="dropdown-item" href="./empty.html?title=Master">Master</a>
