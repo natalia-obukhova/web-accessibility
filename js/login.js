@@ -339,3 +339,17 @@ document.addEventListener('DOMContentLoaded', function() {
         .getElementById('register-register-button')
         .addEventListener('click', register, false);
 }, false);
+
+document.getElementById("login-remmeber-control").addEventListener("click", function() {
+  var target = $(event.target)[0];
+  var state = target.getAttribute("checked");
+  console.log(state);
+  if (state == "true") {
+    target.setAttribute("checked", "false");
+    target.setAttribute("aria-checked", "false");
+  }
+  else {
+    target.setAttribute("checked", "true");
+    target.setAttribute("aria-checked", "true");
+  }
+})
