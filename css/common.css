@@ -1,4 +1,23 @@
 
+.dropdown-item.focus,
+.dropdown-item:focus,
+.dropdown-item.hover,
+.dropdown-item:hover,
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: underline;
+    background-color: #4b6660
+}
+
+
+.nav-link:focus, .nav-link.focus, .nav-link.active, .nav-link:hover {
+  color: black !important;
+  background-color: #e0e2e1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 html {
     font-size: 1rem
 }
