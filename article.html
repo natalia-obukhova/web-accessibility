@@ -12,6 +12,13 @@
 </head>
 
 <body class="d-flex flex-column bg-light">
+  
+  <!--skip links-->
+  <div class="hidden"><!-- style="display: none"> visibility: hidden;-->
+    <a href="#main">Skip to main content</a>
+    <a href="#footer">Skip to footer</a>
+  </div>
+    
   <!--start of header section-->
   <header class="container-fluid d-none d-lg-block my-4 header" aria-label="Header of the website. Contains the logo image, name of the website and buttons for increasing and decreasing the font size.">
       <div class="container" role = "group">
@@ -50,7 +57,7 @@
             <a role="link" class="nav-link" href="./index.html"><img role="img" alt="logo" class="rounded-right" src="./img/logo.jpg" width="40" height="40"></a>
           </div>
 
-          <button role="menuitem" class="navbar-toggler" type="button">
+          <button role="menuitem" class="navbar-toggler" type="button" aria-label="navigation bar toggle">
             <span class="navbar-toggler-icon"></span>
           </button>
 
