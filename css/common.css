@@ -1,17 +1,20 @@
-.skip-to-content-link {
-  background: #e77e23;
-  height: 30px;
-  left: 50%;
-  padding: 8px;
+.skip {
   position: absolute;
-  transform: translateY(-100%);
-  transition: transform 0.3s;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
 }
 
-.skip-to-content-link:focus {
-  transform: translateY(0%);
+.skip:focus, .skip:active {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
-
 
 .dropdown-item.focus,
 .dropdown-item:focus,
@@ -19,11 +22,10 @@
 .dropdown-item:hover,
 .dropdown-item.active,
 .dropdown-item:active {
-    color: #fff;
-    text-decoration: underline;
-    background-color: #4b6660
+  color: #fff;
+  text-decoration: underline;
+  background-color: #4b6660
 }
-
 
 .nav-link:focus, .nav-link.focus, .nav-link.active, .nav-link:hover {
   color: black !important;
@@ -33,75 +35,78 @@
 }
 
 html {
-    font-size: 1rem
+  font-size: 1rem
 }
 
 body,
 html {
-    height: 100%
+  height: 100%
 }
 
 body a,
 body div,
 body p {
-    color: #474747
+  color: #474747
 }
 
 body a:hover {
-    text-decoration: underline;
-    color: #484848
+  text-decoration: underline;
+  color: #484848
 }
 
 ul {
-  list-style-type : none;
+  list-style-type: none;
   padding: 0;
 }
 
 .title {
-    font-size: 2rem;
-    font-weight: 100
+  font-size: 2rem;
+  font-weight: 100
 }
 
 .subtitle {
-    font-size: 1.2rem
+  font-size: 1.2rem
 }
 
 .header .logo {
-    height: 3.5rem;
-    width: 3.5rem
+  height: 3.5rem;
+  width: 3.5rem
 }
 
 .header .title {
-    font-size: 1.5rem;
-    line-height: 1.8rem
+  font-size: 1.5rem;
+  line-height: 1.8rem
 }
 
 .header .font-increase-button,
 .nav .font-increase-button {
-    font-size: .8rem
+  font-size: .8rem
 }
 
 .header .font-decrease-button,
 .nav .font-decrease-button {
-    font-size: .6rem
+  font-size: .6rem
 }
 
 .footer,
 .header,
 .nav {
-    flex: 0 0 auto
+  flex: 0 0 auto
 }
 
 .main {
-    flex: 1 0 auto
+  flex: 1 0 auto
 }
+
 h2 {
   font-size: 1.05rem;
 }
-.hidden
-{position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
