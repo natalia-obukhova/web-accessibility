@@ -109,7 +109,7 @@ $(document).keypress(function(e) {
     }
 });
 
-// close ioen dropdown menu when out of focus
+// close dropdown menu when out of focus
 $(document).on("click", function(event){
         console.log("In close meu")
         var $trigger = $(".dropdown");
