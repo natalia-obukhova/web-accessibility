@@ -108,3 +108,13 @@ $(document).keypress(function(e) {
         }
     }
 });
+
+// close ioen dropdown menu when out of focus
+$(document).on("click", function(event){
+        console.log("In close meu")
+        var $trigger = $(".dropdown");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".dropdown-menu").slideUp("fast");
+        }            
+    });
+
